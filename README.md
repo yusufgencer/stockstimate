@@ -25,10 +25,7 @@ This notebook trains a **CatBoost regression model** using historical stock data
 
 ### **How to Use**
 1. Open `catboost_forecast.ipynb` in Jupyter Notebook or VS Code.
-2. Ensure you have the dataset files:
-   - `stock_data_train.json`
-   - `stock_data_test.json`
-3. Run all cells in the notebook to train and evaluate the CatBoost model.
+2. Run all cells in the notebook to train and evaluate the CatBoost model.
 
 ### **Expected Output**
 - The model will provide **predictions** for stock prices.
@@ -45,8 +42,8 @@ This notebook utilizes a **fine-tuned large language model (LLM)** to analyze st
 ### **How to Use**
 1. Open `model_test.ipynb` in Jupyter Notebook or VS Code.
 2. Load the fine-tuned LLM model.
-3. Provide historical stock data (`stock_data_finetune.json`).
-4. Run all cells to generate stock price predictions.
+3. Provide example type stock data from (`stock_data_test.json`).
+4. Run defined cell to generate stock price predictions.
 
 ### **Run LLM Model for Stock Price Forecasting**
 To use the fine-tuned LLM model for stock prediction, run the following code inside `model_test.ipynb`:
@@ -67,20 +64,6 @@ print(tokenizer.decode(outputs[0], skip_special_tokens=True))
 ### **Expected Output**
 - The model will analyze historical stock data (price changes, RSI, MFI, volume trends, and news headlines).
 - It will generate a **stock price prediction** for the next 3 days based on this data.
-
----
-
-## 📂 **Project Files**
-| File | Description |
-|------|------------|
-| `catboost_forecast.ipynb` | CatBoost-based stock price prediction model |
-| `model_test.ipynb` | Fine-tuned LLM model for stock trend forecasting |
-| `train_data_generator.ipynb` | Generates synthetic training data for experiments |
-| `stock_data_train.json` | Training dataset for CatBoost |
-| `stock_data_test.json` | Test dataset for CatBoost |
-| `stock_data_finetune.json` | Dataset used for fine-tuning the LLM |
-| `requirements.txt` | List of required dependencies |
-
 
 ---
 
