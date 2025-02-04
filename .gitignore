@@ -1,0 +1,95 @@
+# Virtual environment
+myenv/
+.env/
+*.venv/
+env/
+venv/
+ENV/
+
+# Python compiled files
+*.py[cod]
+__pycache__/
+*.so
+*.egg
+*.egg-info/
+dist/
+build/
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+
+# Logs and output files
+*.log
+*.out
+*.txt
+*.csv
+
+# Machine learning model files
+*.h5
+*.pkl
+*.joblib
+*.ckpt
+*.pth
+*.onnx
+
+# TensorFlow and PyTorch artifacts
+saved_model/
+logs/
+*.pb
+*.tflite
+
+# Dataset files
+data/
+datasets/
+*.zip
+*.tar
+*.gz
+
+# Cache and temporary files
+*.temp
+*.tmp
+*.cache
+*.pyo
+*.DS_Store
+
+# IDE and editor settings
+.vscode/
+.idea/
+*.sublime-workspace
+*.sublime-project
+
+# OS-specific files
+.DS_Store
+Thumbs.db
+
+# Cloud configuration files
+*.env
+credentials.json
+config.json
+
+# Test artifacts
+.coverage
+htmlcov/
+*.pytest_cache/
+.nox/
+.tox/
+
+# Python package artifacts
+*.whl
+*.egg-info/
+pip-log.txt
+
+# PyCharm project files
+.idea/
+
+# JupyterLab files
+.lab/
+
+
+.cache.sqlite
+catboost_info/time_left.tsv
+catboost_info/catboost_training.json
+catboost_info/learn_error.tsv
+catboost_info/learn/events.out.tfevents
+
+.codegpt
